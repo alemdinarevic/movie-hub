@@ -2,8 +2,8 @@ const { addToLikedMovies, getLikedMovies, removeFromLikedMovies } = require("../
 
 const router = require("express").Router();
 
-router.post('/add', addToLikedMovies);
 router.get('/liked/:email', getLikedMovies);
-router.put("/delete/:email/:likedMovie", removeFromLikedMovies);
+router.post('/add', addToLikedMovies);
+router.put("/delete", removeFromLikedMovies);
 
 module.exports = router;
